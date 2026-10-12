@@ -1,0 +1,10 @@
+{
+  "name": "rapido-clone-frontends",
+  "private": true,
+  "workspaces": ["frontend/customer-app", "frontend/captain-app"],
+  "scripts": {
+    "dev:customer": "npm run dev -w customer-app",
+    "dev:captain": "npm run dev -w captain-app",
+    "build": "npm run build -w customer-app && npm run build -w captain-app"
+  }
+}
